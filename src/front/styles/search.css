@@ -1,0 +1,38 @@
+
+
+.searchCarta{
+    width: 55rem;
+    height: 70rem
+}
+
+
+.cartaBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.cartaForm{
+    width: 30vw;
+}
+
+.searchbutton{
+    background-color: rgb(54, 54, 54);
+ border-color: transparent;
+}
+
+
+.searchCarta{
+    margin: auto;
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.searchbutton:hover{
+    background-color: black;
+    border-color: transparent;
+}

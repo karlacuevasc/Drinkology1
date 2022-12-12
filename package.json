@@ -73,10 +73,16 @@
 		]
 	},
 	"dependencies": {
-		"prop-types": "^15.6.1",
+		"aos": "^2.3.4",
+		"bootstrap": "^4.6.0",
+		"flask": "^0.2.10",
+		"prop-types": "^15.8.1",
+		"python": "0.0.4",
 		"react": "^16.8.4",
+		"react-bootstrap": "^2.7.0",
 		"react-dom": "^16.8.4",
 		"react-polyfills": "0.0.1",
-		"react-router-dom": "^6.3.0"
+		"react-router-dom": "^6.4.5",
+		"react-script-tag": "^1.1.2"
 	}
 }

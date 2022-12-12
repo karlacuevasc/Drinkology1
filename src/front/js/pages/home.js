@@ -1,26 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, Component } from "react";
 import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
-import "../../styles/home.css";
+import { Carta, Carta3 } from "../component/HomePageCards";
+import { Banner } from "../component/Intro";
+import { DrinkologyLogo } from "../component/logo";
+import { Library } from "./library";
+import "../../styles/cards.css";
 
 export const Home = () => {
-	const { store, actions } = useContext(Context);
-
+	const { actions } = useContext(Context);
+	useEffect(() => {
+		actions.randomcocktailsInfo();
+	}, []);
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">
-				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
-			</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://start.4geeksacademy.com/starters/react-flask">
-					Read documentation
-				</a>
-			</p>
+		<div>
+			<Banner />
+
+			<DrinkologyLogo />
+
+			<Carta />
+
+			<Carta3 />
+
+			<Library />
 		</div>
 	);
 };
