@@ -32,7 +32,7 @@ const Layout = () => {
 					<Routes>
 						<Route exact path="/" element={<Home/>}>
 						</Route>
-						<Route exact path="/cocktails/:cocktailId" component={<CocktailsInfo/>}>
+						<Route exact path="/cocktails/:cocktailId" element={<CocktailsInfo/>}>
 						</Route>
 						<Route exact path="/signup" element={<Signup/>}>
 						</Route>

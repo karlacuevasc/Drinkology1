@@ -40,9 +40,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					);
 					let jsonOfCocktailsDescription = await waitForCocktailsDescription.json();
 					setStore({ cocktails: jsonOfCocktailsDescription.drinks });
+					
 				} catch (error) {
 					console.log(error);
 				}
+		
 			},
 			randomcocktailsInfo: async () => {
 				const randomEndPoint = await `${process.env.APIURL}/${process.env.APIKEY}/randomselection.php`;

@@ -10,7 +10,7 @@ export const Contact = () => {
 
 	return (
 		<>
-			<div className="contactImage" fluid>
+			<div className="contactImage" >
 				<div className="">
 					<Container className="">
 						<h1 className="contactTitle">Contact Us</h1>

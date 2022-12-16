@@ -21,7 +21,7 @@ export const NavBar = () => {
 		<Navbar variant="light" bg="light" expand="lg">
 			<Container fluid>
 				<Navbar.Brand href="/">
-					<i className="fas fa-cocktail" />
+					<i className="navbarLogo fas fa-cocktail" />
 				</Navbar.Brand>
 
 				<Nav className="justify-content-center" activeKey="/home">

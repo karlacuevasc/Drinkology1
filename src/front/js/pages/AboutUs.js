@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Karla, Luis } from "../component/AboutUsCards";
-import { Jumbotron, Row, Col, Image } from "react-bootstrap";
+import {Row, Col, Image, Container } from "react-bootstrap";
+
 import Miami from "../../img/miami.jpeg";
 import "../../styles/aboutus.css";
 
@@ -10,10 +11,12 @@ export const Aboutus = () => {
 
 	return (
 		<div>
-			{/* <Jumbotron className="aboutusImage" fluid>
-				<h1 className="storyTitle">The Story of</h1>
+		<div className="aboutusImage">
+			<Container>
+			<h1 className="storyTitle">The Story of</h1>
 				<h1 className="companyTitle">Drinkology</h1>
-			</Jumbotron> */}
+			</Container>
+		</div>
 
 			<Row className="aboutus">
 				<Col sm={6} className="aboutuscontainer">
