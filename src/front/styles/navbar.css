@@ -1,9 +1,7 @@
 
 .navbar{
-    background-color: white;
-    max-height: 130px;
-    padding-right: 50px;
-    padding-left: 50px;
+    justify-content: right;
+    margin-bottom: 0;
 }
 
 .navbarLogo{

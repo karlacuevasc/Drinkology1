@@ -4,6 +4,10 @@ import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import { SignOut } from "./signout";
 import "../../styles/navbar.css";
 
@@ -18,7 +22,8 @@ export const NavBar = () => {
 	};
 
 	return (
-		<Navbar variant="light" bg="light" expand="lg">
+		<div>
+		{/* <Navbar variant="light" bg="light" expand="lg">
 			<Container fluid>
 				<Navbar.Brand href="/">
 					<i className="navbarLogo fas fa-cocktail" />
@@ -68,7 +73,39 @@ export const NavBar = () => {
 						</>
 					)}
 				</Nav>
+
 			</Container>
-		</Navbar>
+		</Navbar> */}
+
+
+		{['md'].map((expand) => (
+        <Navbar key={expand} bg="light" expand={expand} className="mb-0">
+          <Container fluid>
+            <Navbar.Brand href="/"><i className="navbarLogo fas fa-cocktail" /></Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Offcanvas
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="/login">Log In</Nav.Link>
+                  <Nav.Link href="/signup">Sign Up</Nav.Link>
+				  <Nav.Link href="/about">About</Nav.Link>
+				  <Nav.Link href="/contact">Contact</Nav.Link>
+                  
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+		</div>
 	);
 };
