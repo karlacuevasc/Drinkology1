@@ -95,12 +95,24 @@ export const NavBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
+				{!store.activeUser ? (
+					<>
                   <Nav.Link href="/login">Log In</Nav.Link>
                   <Nav.Link href="/signup">Sign Up</Nav.Link>
 				  <Nav.Link href="/about">About</Nav.Link>
 				  <Nav.Link href="/contact">Contact</Nav.Link>
-                  
+				  </>
+				) : (
+					<>
+				  <Nav.Link href="/profile">Profile</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+				  <Nav.Link href="/contact">Contact</Nav.Link>
+				  <Nav.Link onClick={() => handleLogOut()}>Sign Out</Nav.Link>
+				  </>
+				  
+				)}
                 </Nav>
+				
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

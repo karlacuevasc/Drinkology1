@@ -9,7 +9,7 @@ import "../../styles/jumbotron.css";
 export const Banner = () => {
 	return (
 		<div>
-		<div className="jumbotron" fluid>
+		<div className="jumbotron">
 			<Container>
 				<h1 className="jumboTitle">Introducing a New Way to Access your Favorite Cocktail Recipes.</h1>
 			</Container>
