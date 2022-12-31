@@ -91,7 +91,7 @@ export const NavBar = () => {
               <Offcanvas.Header closeButton>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="offCanvas justify-content-end flex-grow-1 pe-3">
 				{!store.activeUser ? (
 					<>
                   <Nav.Link href="/login">Log In</Nav.Link>

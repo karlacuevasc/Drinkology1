@@ -13,7 +13,7 @@ export const Footer = () => {
 				<div className="text-white-small">
 					<Row>
 						<Col sm={4}>
-							<div className="flex-column justify-content-between">
+							<div className="theFooter flex-column justify-content-between">
 								<img src={LogoWhite} className="logo" />
 							</div>
 						</Col>
