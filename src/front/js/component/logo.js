@@ -7,7 +7,7 @@ import "../../styles/logo.css";
 export const DrinkologyLogo = () => {
 	return (
 		<Container className="logoBackground">
-			<Image src={Logo} />
+			<Image className= "img-fluid" src={Logo} />
 		</Container>
 	);
 };

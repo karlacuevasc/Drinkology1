@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const Karla = () => {
 	return (
 		<Card className="cartasTeam">
-			<Image className="cartasImageKarla m-auto" variant="top" src={KC} style={{ width: "535px" }} />
+			<Image className="cartasImageKarla m-auto img-fluid" variant="top" src={KC} style={{ width: "535px" }} />
 			<Card.Body className="cartasBodyTeam">
 				<Card.Title className="titleTeam">Karla Cuevas</Card.Title>
 			</Card.Body>
@@ -20,7 +20,7 @@ export const Karla = () => {
 export const Luis = () => {
 	return (
 		<Card className="cartasTeam">
-			<Image className="cartasImageLuis" variant="top" src={Lucho} style={{ width: "500px" }} />
+			<Image className="cartasImageLuis img-fluid" variant="top" src={Lucho} style={{ width: "500px" }} />
 			<Card.Body className="cartasBodyTeam">
 				<Card.Title className="titleTeam">Luis Furlan</Card.Title>
 			</Card.Body>

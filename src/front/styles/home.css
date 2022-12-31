@@ -13,7 +13,6 @@ body{
 /* // Style for Jumbotron */
 
 .jumbotron{
-    /* // background-image: url("../img/cocktail4.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,30 +20,7 @@ body{
 
 }
 
-/* // .display-2{
-//     color: white;
-//     font-size: 55px;
-//     text-align:inherit;
-//     padding-bottom: 40px;
-// }
 
-// .black-rectangle{
-//     background-color: black;
-//     height: 5in;
-//     position: relative
-// }
-
-// .text{
-//     color: white;
-//     text-align: center;
-//     margin: 0;
-//     position: absolute;
-//     top: 15rem;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-
- 
-// } */
 
 .first-title{
     font-size: 2rem;
@@ -67,18 +43,7 @@ body{
     transition-duration: 0.3s;
 }
 
-/* // .navbar-toggler{
-//     background: black;
-//     color: white;
-// }
-
-// .navbar-toggler-icon{
-//     background: white;
-// } */
-
 .m-auto{
-    /* // border: 2px solid #92a39a;
-    // box-shadow: 10px 5px 5px #b97747; */
     background-color: grey;
 
 }

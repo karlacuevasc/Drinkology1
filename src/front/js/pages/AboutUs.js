@@ -4,6 +4,7 @@ import { Karla, Luis } from "../component/AboutUsCards";
 import {Row, Col, Image, Container } from "react-bootstrap";
 
 import Miami from "../../img/miami.jpeg";
+import Cocktails from "../../img/over10.jpeg"
 import "../../styles/aboutus.css";
 
 export const Aboutus = () => {
@@ -29,15 +30,15 @@ export const Aboutus = () => {
 					</p>
 				</Col>
 				<Col sm={6} className="aboutusimage">
-					<Image className="firstImage" src={Miami} />
+					<Image className="thefirstaboutImage img-fluid shadow-4" src={Miami} />
 				</Col>
 			</Row>
 
 			<Row className="aboutus2">
 				<Col sm={6} className="aboutusimage2">
 					<Image
-						className="firstImage"
-						src="https://media.istockphoto.com/photos/close-up-of-pouring-red-wine-into-a-glass-outdoors-picture-id1044127598?k=20&m=1044127598&s=612x612&w=0&h=ncH8Xemdp-Me-Ht1NVum2sc0tsrnBv0mCSOuJhbIKQs="
+						className="thefirstaboutImage img-fluid shadow-4"
+						src={Cocktails}
 					/>
 				</Col>
 				<Col sm={6} className="aboutuscontainer2">

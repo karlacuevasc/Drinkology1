@@ -33,17 +33,14 @@
    text-align: center;
 }
 
-.aboutusimage{
-   text-align: center;
-}
 
 .aboutusimage2{
    text-align: center;
 }
 
-.firstImage{
+.thefirstaboutImage{
    padding-top: 50px;
-   height: 600px;
+
 }
 
 .aboutuscontainer{
@@ -52,6 +49,9 @@
    padding-right: 60px;
    margin: auto;
 }
+
+@media (max-width: 200px) {
+ }
 
 .aboutus2{
    padding-top: 100px;

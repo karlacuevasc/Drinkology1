@@ -11,7 +11,7 @@ export const Carta = () => {
 	return (
 		<Row className="cartasimagepadding">
 			<Col sm={6}>
-				<Image className="cartasImage" src={Iphone} />
+				<Image className="cartasImage img-fluid" src={Iphone} />
 			</Col>
 			<Col sm={6} className="cartas">
 				<h1 className="title">Cocktail Recipes On The Go</h1>
@@ -34,7 +34,7 @@ export const Carta3 = () => {
 				</p>
 			</Col>
 			<Col sm={6}>
-				<Image className="cartasImage" src={Share} />
+				<Image className="cartasImage img-fluid" src={Share} />
 			</Col>
 		</Row>
 	);
